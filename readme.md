@@ -32,13 +32,13 @@ It speaks in Einstein’s curious, humble, and slightly humorous tone, using ana
 
 ## Installation
 
-1. Clone the repository:
-\n git clone <repository_url>
+1. Clone the repository:    
+git clone <repository_url>
 
-2. Navigate to repository folder:
+2. Navigate to repository folder:   
 cd <repository_folder>
 
-3. Install dependencies:
+3. Install dependencies:    
 pip install -r requirements.txt
 
 4. Set up your Google Gemini API key:
