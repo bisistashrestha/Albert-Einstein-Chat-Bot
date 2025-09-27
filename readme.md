@@ -42,7 +42,7 @@ cd <repository_folder>
 pip install -r requirements.txt
 
 4. Set up your Google Gemini API key:   
-Create a .env file in the project root: 
+Create a .env file in the project root:      
 GEMINI_API_KEY=your_google_gemini_api_key_here
 
 5. Add the avatars user.png and einstein.png in the project folder (or update the paths in main.py).
