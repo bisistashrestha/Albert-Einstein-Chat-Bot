@@ -33,7 +33,7 @@ It speaks in Einstein’s curious, humble, and slightly humorous tone, using ana
 ## Installation
 
 1. Clone the repository:
-git clone <repository_url>
+\n git clone <repository_url>
 
 2. Navigate to repository folder:
 cd <repository_folder>
