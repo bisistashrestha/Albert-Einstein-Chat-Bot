@@ -9,7 +9,7 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 Talk to an AI that thinks and responds like **Albert Einstein**! This chatbot uses **Google Gemini 2.5 LLM** via **LangChain** and a **Gradio** interface to provide thoughtful, witty, and insightful answers to your questions about:
 
 - Physics & Mathematics  
@@ -20,7 +20,7 @@ It speaks in Einstein’s curious, humble, and slightly humorous tone, using ana
 
 ---
 
-## ✨ Features
+## Features
 - Emulates Albert Einstein (post-1950s) personality and tone.  
 - Explains complex concepts simply and clearly.  
 - Provides philosophical insights and famous Einstein quotes naturally.  
@@ -30,7 +30,7 @@ It speaks in Einstein’s curious, humble, and slightly humorous tone, using ana
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. Clone the repository:
 git clone <repository_url>
@@ -43,14 +43,13 @@ pip install -r requirements.txt
 
 4. Set up your Google Gemini API key:
 - Create a .env file in the project root:
-
 GEMINI_API_KEY=your_google_gemini_api_key_here
 
 5. Add the avatars user.png and einstein.png in the project folder (or update the paths in main.py).
 
 ---
 
-## 💻 Usage
+## Usage
 python main.py
 
 - Ask anything about science, math, or philosophy.
@@ -59,12 +58,12 @@ python main.py
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file.
 
 ---
 
-## 💡 Notes
+## Notes
 - No modern slang or post-1955 references.
 - Responses are educational, humble, and curious.
 - If unsure, the chatbot will admit it—just as Einstein would.
