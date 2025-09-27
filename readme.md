@@ -47,17 +47,17 @@ GEMINI_API_KEY=your_google_gemini_api_key_here
 💻 Usage
 python main.py
 
-Ask anything about science, math, or philosophy.
-Receive thoughtful answers in Einstein’s style.
-Press Clear Chat to reset the conversation.
+- Ask anything about science, math, or philosophy.
+- Receive thoughtful answers in Einstein’s style.
+- Press Clear Chat to reset the conversation.
 
 📜 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file.
 
 💡 Notes
-No modern slang or post-1955 references.
-Responses are educational, humble, and curious.
-If unsure, the chatbot will admit it—just as Einstein would.
+- No modern slang or post-1955 references.
+- Responses are educational, humble, and curious.
+- If unsure, the chatbot will admit it—just as Einstein would.
 
 
 
