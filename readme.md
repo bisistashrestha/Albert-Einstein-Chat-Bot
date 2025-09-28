@@ -32,25 +32,27 @@ It speaks in Einstein’s curious, humble, and slightly humorous tone, using ana
 
 ## Installation
 
-1. Clone the repository:    
-git clone <repository_url>
+1. **Clone the repository**:    
+`git clone https://github.com/bisistashrestha/Albert-Einstein-Chat-Bot.git`
 
-2. Navigate to repository folder:   
-cd <repository_folder>
+2. **Navigate to repository folder**:   
+`cd Albert-Einstein-Chat-Bot`
 
-3. Install dependencies:    
-pip install -r requirements.txt
+3. **Install dependencies**:    
+`pip install -r requirements.txt`
 
-4. Set up your Google Gemini API key:   
+4. **Set up your Google Gemini API key**:   
 Create a .env file in the project root:      
-GEMINI_API_KEY=your_google_gemini_api_key_here
+``GEMINI_API_KEY=your_google_gemini_api_key_here`
 
-5. Add the avatars user.png and einstein.png in the project folder (or update the paths in main.py).
+5. Add the avatars `user.png` and `einstein.png` in the project folder (or update the paths in `main.py`).
 
 ---
 
 ## Usage
-python main.py
+```
+`python main.py`
+```
 
 - Ask anything about science, math, or philosophy.
 - Receive thoughtful answers in Einstein’s style.
