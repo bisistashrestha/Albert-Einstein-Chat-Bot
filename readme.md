@@ -33,7 +33,7 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 
 	python -m venv venv
 	venv\Scripts\activate  # Windows
-	pip install -r requirements.txt
+	pip install -r requirements.txt 
 
 3. Add your Google Gemini API key (do not commit this):
 
