@@ -5,11 +5,10 @@
 **Author:** Bisista Shrestha  
 **Date:** 2025-09-27
 
-<p align="center">
-  <img src="assets/Error-Image.png" alt="UI Screenshot" width="600"/>
-  <br>
-  <em>Figure 1: The main user interface of the project.</em>
-</p>
+| ![UI Screenshot](assets/User-Interface.png) |
+|:--:|
+| *The main user interface of the project.* |
+
 
 
 
@@ -61,7 +60,9 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 - Click **Clear Chat** to reset the conversation history.
 
 ---
-![Clip Preview 2](assets/special-relativity.gif)
+| ![Clip Preview 1](assets/special-relativity.gif) |
+|:--:|
+| *Demo Preview 1* |
 ---
 
 ## Security & Privacy
@@ -70,7 +71,9 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 - This app uses an LLM to generate responses; verify any important factual claims before using them in critical contexts.
 
 ---
-![Clip Preview 3](assets/student-uses.gif)
+| ![Clip Preview 2](assets/student-uses.gif) |
+|:--:|
+| *Demo Preview 2* |
 ---
 
 ## Ethics & Disclaimer
@@ -78,7 +81,9 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 - This project simulates a historical figure for educational/demo purposes only. It is not an official or endorsed likeness. Use responsibly.
 
 ---
-![Clip Preview 4](assets/thanks-einstein.gif)
+| ![Clip Preview 3](assets/thanks-einstein.gif) |
+|:--:|
+| *Demo Preview 3* |
 ---
 
 ## License
@@ -90,7 +95,7 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 ## 🎬 Demo Preview
 ![Demo GIF](assets/who-are-you.gif)
 
-👉 [Watch the full demo here](https://youtu.be/QcEt5xwcRi4)
+👉 [Watch the full Demo Here (YouTube)](https://youtu.be/QcEt5xwcRi4)
 
 
 
