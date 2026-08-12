@@ -81,9 +81,11 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 ---
 
 ## 🎬 Full Demo
+| *👉 [Watch the full Demo Here (YouTube)](https://youtu.be/QcEt5xwcRi4)* |
+|:--:|
 | ![Error](assets/Error-Image.png) |
 |:--:|
-| *👉 [Watch the full Demo Here (YouTube)](https://youtu.be/QcEt5xwcRi4)* |
+| *Sir Einstein Needed a Break~* |
 
 
 
