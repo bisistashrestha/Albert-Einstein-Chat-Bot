@@ -5,7 +5,12 @@
 **Author:** Bisista Shrestha  
 **Date:** 2025-09-27
 
-![Clip Preview 1](assets/who-are-you.gif)
+<p align="center">
+  <img src="assets/Error-Image.png" alt="UI Screenshot" width="400"/>
+  <br>
+  <em>Figure 1: The main user interface of the project.</em>
+</p>
+
 
 
 ## Overview
@@ -81,9 +86,11 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 - MIT — see the LICENSE file.
 
 ---
-## 🎥 Project Demo
-[![Watch the demo](assets/demoThumbnail.png)](https://youtu.be/QcEt5xwcRi4)
 
+## 🎬 Demo Preview
+![Demo GIF](assets/who-are-you.gif)
+
+👉 [Watch the full demo here](https://youtu.be/QcEt5xwcRi4)
 
 
 
