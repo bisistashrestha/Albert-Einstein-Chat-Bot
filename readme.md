@@ -80,6 +80,10 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 
 - MIT — see the LICENSE file.
 
+---
+## 🎥 Project Demo
+[![Watch the demo](assets/demoThumbnail.png)](https://youtu.be/QcEt5xwcRi4)
+
 
 
 
