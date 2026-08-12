@@ -104,7 +104,7 @@ with page:
     gr.HTML(
     value="",
     head="""
-    <link rel="icon" href="einstein.png" type="image/x-icon" />
+    <link rel="icon" href="assets/einstein.png" type="image/x-icon" />
     """,
     js_on_load="""
     document.title = 'Albert Einstein Chatbot';
@@ -119,7 +119,7 @@ with page:
     )
 
     chatbot = gr.Chatbot(
-        avatar_images=['user.png', 'einstein.png'],
+        avatar_images=['assets/user.png', 'assets/einstein.png'],
         show_label=False
     )
 
