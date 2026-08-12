@@ -54,26 +54,41 @@ chain = prompt | llm | StrOutputParser()
 print("Hi, I am Albert Einstein. How can I help you today?")
 
 def chat(user_input, hist):
-    #print(user_input, hist)
+    if not user_input or not user_input.strip():
+        return "", hist
+
     langchain_history = []
-    for item in hist:
-        if item["role"] == "user":
-            langchain_history.append(HumanMessage(content=item["content"]))
-        elif item["role"] == "assistant":
-            langchain_history.append(AIMessage(content=item["content"]))
-            
-    response = chain.invoke({"input": user_input, "history": langchain_history})
+    if isinstance(hist, list):
+        for item in hist:
+            if isinstance(item, (list, tuple)) and len(item) == 2:
+                u, a = item
+                if u:
+                    langchain_history.append(HumanMessage(content=str(u)))
+                if a:
+                    langchain_history.append(AIMessage(content=str(a)))
 
-    return "", hist + [{"role": "user", "content": user_input}, {"role": "assistant", "content": response}]
+            elif isinstance(item, dict):
+                if item.get("role") == "user":
+                    langchain_history.append(HumanMessage(content=item.get("content", "")))
+                elif item.get("role") == "assistant":
+                    langchain_history.append(AIMessage(content=item.get("content", "")))
 
-    
+
+    langchain_history = langchain_history[-12:]
+
+    try:
+        response = chain.invoke({"input": user_input, "history": langchain_history})
+        if response is None:
+            response = "I'm not sure how to answer that right now."
+    except Exception as e:
+        response = "Sorry — I'm having trouble connecting to the model right now."
+
+    return "", hist + [(user_input, response)]
+
 def clear_chat():
     return "", []
 
-page=gr.Blocks(
-    title="Albert Einstein Chatbot",
-    theme=gr.themes.Soft()
-)
+page=gr.Blocks()
 
 with page:
     gr.Markdown(
@@ -83,10 +98,12 @@ with page:
         """
     )
 
-    chatbot=gr.Chatbot(type="messages",
-                       avatar_images=['user.png', 'einstein.png'],
-                       show_label=False
-                       )
+    chatbot = gr.Chatbot(
+        avatar_images=['user.png', 'einstein.png'],
+        show_label=False
+    )
+
+
 
     msg = gr.Textbox(show_label=False, placeholder="Ask Einstein anything...")
 
@@ -95,3 +112,4 @@ with page:
     clear = gr.Button("Clear Chat").click(clear_chat, outputs=[msg,chatbot])
 
 page.launch(share=False)
+

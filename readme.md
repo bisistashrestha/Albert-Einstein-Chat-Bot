@@ -1,74 +1,77 @@
 # Albert Einstein Chatbot ⚛️
 
-[![Python](https://img.shields.io/badge/python-3.9+-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Gradio](https://img.shields.io/badge/Gradio-UI-success)](https://gradio.app/)
+[![Python](https://img.shields.io/badge/python-3.9+-blue)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Gradio](https://img.shields.io/badge/Gradio-UI-success)](https://gradio.app/)
 
 **Author:** Bisista Shrestha  
-**Date:** 2025-09-27  
+**Date:** 2025-09-27
 
 ---
 
 ## Overview
-Talk to an AI that thinks and responds like **Albert Einstein**! This chatbot uses **Google Gemini 2.5 LLM** via **LangChain** and a **Gradio** interface to provide thoughtful, witty, and insightful answers to your questions about:
 
-- Physics & Mathematics  
-- Philosophy & Scientific Thinking  
-- General Science  
-
-It speaks in Einstein’s curious, humble, and slightly humorous tone, using analogies and simple explanations wherever possible.
+A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) using Google Gemini via LangChain. Ask questions about physics, mathematics, philosophy, or general science and receive thoughtful, analogy-rich responses in a curious, humble, and slightly witty tone.
 
 ---
 
 ## Features
-- Emulates Albert Einstein (post-1950s) personality and tone.  
-- Explains complex concepts simply and clearly.  
-- Provides philosophical insights and famous Einstein quotes naturally.  
-- Maintains chat history for multi-turn conversations.  
-- Option to **Clear Chat** anytime.  
-- Minimal, responsive **Gradio** interface with avatars.  
+
+- Emulates Albert Einstein’s tone and style.
+- Multi-turn conversations with history support.
+- Minimal Gradio UI with user and Einstein avatars.
+- Clear Chat button to reset conversations.
 
 ---
 
-## Installation
+## Quickstart
 
-1. **Clone the repository**:    
-`git clone https://github.com/bisistashrestha/Albert-Einstein-Chat-Bot.git`
+1. Clone:
 
-2. **Navigate to repository folder**:   
-`cd Albert-Einstein-Chat-Bot`
+	git clone <your-repo-url>
+	cd Albert-Einstein-Chat-Bot
 
-3. **Install dependencies**:    
-`pip install -r requirements.txt`
+2. Create a virtual environment and install dependencies:
 
-4. **Set up your Google Gemini API key**:   
-Create a .env file in the project root:      
-`GEMINI_API_KEY=your_google_gemini_api_key_here`
+	python -m venv venv
+	venv\Scripts\activate  # Windows
+	pip install -r requirements.txt
 
-5. Add the avatars `user.png` and `einstein.png` in the project folder (or update the paths in `main.py`).
+3. Add your Google Gemini API key (do not commit this):
+
+	Create a `.env` file at the project root with:
+
+	GEMINI_API_KEY=your_google_gemini_api_key_here
+
+4. Run the app:
+
+	python main.py
+
+	- For a temporary public link, set the environment variable `GRADIO_SHARE=true` before running.
 
 ---
 
 ## Usage
-```
-`python main.py`
-```
 
-- Ask anything about science, math, or philosophy.
-- Receive thoughtful answers in Einstein’s style.
-- Press Clear Chat to reset the conversation.
+- Type a question into the textbox and press Enter.
+- Click **Clear Chat** to reset the conversation history.
+
+---
+
+## Security & Privacy
+
+- Never commit your `.env` file or API keys.
+- This app uses an LLM to generate responses; verify any important factual claims before using them in critical contexts.
+
+---
+
+## Ethics & Disclaimer
+
+- This project simulates a historical figure for educational/demo purposes only. It is not an official or endorsed likeness. Use responsibly.
 
 ---
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file.
 
----
-
-## Notes
-- No modern slang or post-1955 references.
-- Responses are educational, humble, and curious.
-- If unsure, the chatbot will admit it—just as Einstein would.
+- MIT — see the LICENSE file.
 
 
 

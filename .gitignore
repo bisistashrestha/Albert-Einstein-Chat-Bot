@@ -1,3 +1,9 @@
-.gradio
-.venv/
 .env
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.sqlite3
+*.log
+.gradio
+.vscode
