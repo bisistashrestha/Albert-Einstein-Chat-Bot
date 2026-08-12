@@ -6,7 +6,7 @@
 **Date:** 2025-09-27
 
 <p align="center">
-  <img src="assets/Error-Image.png" alt="UI Screenshot" width="400"/>
+  <img src="assets/Error-Image.png" alt="UI Screenshot" width="600"/>
   <br>
   <em>Figure 1: The main user interface of the project.</em>
 </p>
