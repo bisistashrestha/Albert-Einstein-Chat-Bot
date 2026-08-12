@@ -60,10 +60,6 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 - Click **Clear Chat** to reset the conversation history.
 
 ---
-| ![Clip Preview 2](assets/special-relativity.gif) |
-|:--:|
-| *Demo Preview 2* |
----
 
 ## Security & Privacy
 
@@ -71,19 +67,11 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 - This app uses an LLM to generate responses; verify any important factual claims before using them in critical contexts.
 
 ---
-| ![Clip Preview 3](assets/student-uses.gif) |
-|:--:|
-| *Demo Preview 3* |
----
 
 ## Ethics & Disclaimer
 
 - This project simulates a historical figure for educational/demo purposes only. It is not an official or endorsed likeness. Use responsibly.
 
----
-| ![Clip Preview 4](assets/thanks-einstein.gif) |
-|:--:|
-| *Demo Preview 4* |
 ---
 
 ## License
