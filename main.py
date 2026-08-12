@@ -57,22 +57,27 @@ def chat(user_input, hist):
     if not user_input or not user_input.strip():
         return "", hist
 
-    langchain_history = []
+    chat_history = []
     if isinstance(hist, list):
         for item in hist:
             if isinstance(item, (list, tuple)) and len(item) == 2:
                 u, a = item
                 if u:
-                    langchain_history.append(HumanMessage(content=str(u)))
+                    chat_history.append({"role": "user", "content": str(u)})
                 if a:
-                    langchain_history.append(AIMessage(content=str(a)))
-
+                    chat_history.append({"role": "assistant", "content": str(a)})
             elif isinstance(item, dict):
-                if item.get("role") == "user":
-                    langchain_history.append(HumanMessage(content=item.get("content", "")))
-                elif item.get("role") == "assistant":
-                    langchain_history.append(AIMessage(content=item.get("content", "")))
+                role = item.get("role")
+                content = item.get("content", "")
+                if role:
+                    chat_history.append({"role": role, "content": content})
 
+    langchain_history = []
+    for msg in chat_history:
+        if msg["role"] == "user":
+            langchain_history.append(HumanMessage(content=msg["content"]))
+        else:
+            langchain_history.append(AIMessage(content=msg["content"]))
 
     langchain_history = langchain_history[-12:]
 
@@ -80,10 +85,14 @@ def chat(user_input, hist):
         response = chain.invoke({"input": user_input, "history": langchain_history})
         if response is None:
             response = "I'm not sure how to answer that right now."
-    except Exception as e:
+    except Exception:
         response = "Sorry — I'm having trouble connecting to the model right now."
 
-    return "", hist + [(user_input, response)]
+    chat_history.append({"role": "user", "content": user_input})
+    chat_history.append({"role": "assistant", "content": response})
+
+    return "", chat_history
+
 
 def clear_chat():
     return "", []
@@ -91,6 +100,17 @@ def clear_chat():
 page=gr.Blocks()
 
 with page:
+
+    gr.HTML(
+    value="",
+    head="""
+    <link rel="icon" href="einstein.png" type="image/x-icon" />
+    """,
+    js_on_load="""
+    document.title = 'Albert Einstein Chatbot';
+    """
+    )
+
     gr.Markdown(
         """
         # Albert Einstein Chatbot

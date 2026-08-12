@@ -1,11 +1,11 @@
 # Albert Einstein Chatbot ⚛️
 
-[![Python](https://img.shields.io/badge/python-3.9+-blue)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Gradio](https://img.shields.io/badge/Gradio-UI-success)](https://gradio.app/)
+[![Python](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Gradio](https://img.shields.io/badge/Gradio-UI-success)](https://gradio.app/)
 
 **Author:** Bisista Shrestha  
 **Date:** 2025-09-27
+![UI Preview](UI%20screenshot.png)
 
----
 
 ## Overview
 
