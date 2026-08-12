@@ -4,6 +4,7 @@
 
 **Author:** Bisista Shrestha  
 **Date:** 2025-09-27
+
 ![Clip Preview 1](assets/who-are-you.gif)
 
 
@@ -53,16 +54,18 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 
 - Type a question into the textbox and press Enter.
 - Click **Clear Chat** to reset the conversation history.
-![Clip Preview 2](assets/special-relativity.gif)
 
+---
+![Clip Preview 2](assets/special-relativity.gif)
 ---
 
 ## Security & Privacy
 
 - Never commit your `.env` file or API keys.
 - This app uses an LLM to generate responses; verify any important factual claims before using them in critical contexts.
-![Clip Preview 3](assets/student-uses.gif)
 
+---
+![Clip Preview 3](assets/student-uses.gif)
 ---
 
 ## Ethics & Disclaimer
@@ -71,6 +74,7 @@ A lightweight Gradio app that emulates Albert Einstein’s voice (post-1950s) us
 
 ---
 ![Clip Preview 4](assets/thanks-einstein.gif)
+---
 
 ## License
 
