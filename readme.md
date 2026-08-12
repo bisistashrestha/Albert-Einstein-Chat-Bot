@@ -4,7 +4,7 @@
 
 **Author:** Bisista Shrestha  
 **Date:** 2025-09-27
-![UI Preview](Error%100Image.png)
+![UI Preview](Error-Image.png)
 
 
 ## Overview
